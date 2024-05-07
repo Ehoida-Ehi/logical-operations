@@ -1,0 +1,383 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.800);
+}
+.navigation ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    color:white;
+    padding: 0 25px;
+    display: block;
+}
+.navigation ul li:hover a {
+    background-color: grey;
+    color: #ffffff;
+}
+.banner{
+    background-image: url(./images/background\ banner.png);
+    height: 600px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.banner-img img{
+    width:400px;
+}
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: white;
+}
+.banner-text h1{
+    font-weight: 1200;
+    font-size: 3.2vw;
+    margin: 2px;
+}
+.banner-text h4{
+    margin: 0;
+    font-size: 1.5vw;
+
+}
+.banner-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-top: 40px;
+
+}
+.red button{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1vw;
+}
+.aqua button{
+    background-color: aqua;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1vw;
+}
+.blue button{
+    background-color: aqua;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1vw;
+}
+.part1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+}
+.part1-item{
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.part1-item h1{
+    font-size: 2.5vw;
+}
+.part1-item p{
+    font-size: 1.2vw;
+}
+.part2{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: black;
+}
+.part2-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: aqua;
+}
+.part2-itemA h1{
+    font-size: 2.2vw;
+}
+.part2-itemA p{
+    font-size: 1vw;
+}
+.part2-item h1{
+    font-size: 2.2vw;
+}
+
+.part2-itemA{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: aqua;
+}
+.part2-itemA h1{
+    margin: 0;
+}
+.part3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 350px;
+    gap: 1px;
+    background-color: black;
+}
+.part3-item{
+    background-color: greenyellow;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.part3-item p{
+    font-size: 1.5vw;
+}
+.part3-item h1{
+    font-size: 3.0vw;
+}
+.part3-item tall h1{
+    font-size: 2.2vw;
+}
+.part3-item tall p{
+    font-size: 1.2vw;
+}
+.tall{
+    grid-row: span 2;
+}
+
+.part4{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1px;
+    background-color: black;
+}
+.part4-item{
+    background-color:magenta;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.part4-item h4{
+    font-size: 3.0vw;
+}
+.part4-item tall p{
+    font-size: 1.2vw;
+}
+.part4-item tall h1{
+    font-size: 3.3vw;
+}
+.part4-item p{
+    margin: 0;
+    font-size: 1.2vw;
+}
+.part4-item h1{
+    margin: 0;
+}
+.part4-itemA{
+    background-color:magenta;
+    font-size: 1rem;
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+.part4-itemA h1{
+    font-size: 2.2vw;
+}
+.part5{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
+    gap: 1px;
+    background-color: black;
+    height: 500px;
+}
+.part5-item{
+    background-color: lightseagreen;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.part5-itemA{
+    background-color: lightseagreen;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.part5-itemA tall h4{
+    font-size: 2.2vw;
+}
+.part5-itemA tall h1{
+    font-size: 3.5vw;
+}
+.part5-itemA tall p{
+    font-size: 1.5vw;
+}
+.part5-item h3{
+    font-size: 3vw;
+}
+.part5-itemA h4{
+    margin: 0;
+}
+.part5-itemA h1{
+    margin: 0;
+}
+.part5-itemA p{
+    margin: 0;
+    color: black;
+}
+.part6{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1px;
+    background-color: orange;
+    height: 200px;
+}
+.part6-itemA h1{
+    font-size: 4vw;
+}
+.part6-itemA p{
+    font-size: 2vw;
+}
+.part6-itemA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: orange;
+    height: 200px;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: gray;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/*styles for large screens (923px wide and above)*/
+@media screen and (min-width: 923px) {
+    body{
+        font-size: 18px;
+        
+    }
+    
+    .banner-img img{
+        width: 400px;
+
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banner-text{
+        padding-left: 10px;
+     }
+
+     .part1-item{
+        padding-left: 10px;
+     }
+     .part5-item{
+        padding-left: 10px;
+     }
+
+}
+
+
+/* styles for medium screen(601px to 922px wide)*/
+@media screen and (min-width: 601px) and (max-width:922px) {
+    body{
+        font-size: 16px;
+    
+    }
+    
+    .banner-img img{
+        width: 300px;
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+     .banner-text{
+        padding-left: 10px;
+     }
+     .part5-item{
+        padding-left: 10px;
+     }
+} 
+
+
+
+
+
+/* styles for small screens (up to 600px wide)*/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    body{
+        font-size: 14px;
+        background-color: red;
+
+    }
+    
+    .banner-img img{
+        width: 300px;
+        
+
+    }
+
+    .banner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner-text{
+        padding-left: 5px;
+     }
+     .part5-item{
+        padding-left: 10px;
+     }
+} 
+    
+
